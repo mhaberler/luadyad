@@ -16,17 +16,20 @@ KISS webframework for lua
 
 ## How to
 
-get the source
+* get the source
+
     $ git clone --recursive https://github.com/markuman/luadyad
 
-compile
+* compile
+
     $ tcc -Idyad/src/ dyad/src/dyad.c -llua luadyad.c -o luadyad
 
-run
+* run
+
     $ ./luadyad
     server listening: http://localhost:8000
 
-use
+* use
 
 ![luadyad](https://raw.githubusercontent.com/markuman/luadyad/master/doc/helloworld.jpg "luadyad hello world")
 
