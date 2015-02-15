@@ -10,6 +10,7 @@ KISS webframework for lua
 
 ## requirements
 
+
 * lua 5.2.x or lua 5.3.x _(liblua is sufficient)_
 * C compiler _(tcc is sufficient)_
 
@@ -19,20 +20,20 @@ KISS webframework for lua
 * get the source
 
 
-    $ git clone --recursive https://github.com/markuman/luadyad
+    `$ git clone --recursive https://github.com/markuman/luadyad`
 
 
 * compile
 
 
-    $ tcc -Idyad/src/ dyad/src/dyad.c -llua luadyad.c -o luadyad
+    `$ tcc -Idyad/src/ dyad/src/dyad.c -llua luadyad.c -o luadyad`
 
 
 * run
 
 
-    $ ./luadyad
-    server listening: http://localhost:8000
+    `$ ./luadyad`
+    `server listening: http://localhost:8000`
 
 
 * use
