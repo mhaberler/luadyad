@@ -42,3 +42,4 @@ KISS webframework for lua
 ![luadyad](https://raw.githubusercontent.com/markuman/luadyad/master/doc/helloworld.jpg "luadyad hello world")
 
 
+You can specify a port by using `./luadyad 8888`
