@@ -85,10 +85,9 @@ static void onError(dyad_Event *e) {
 
 int main(int argc, char *argv[] ) {
 
+  // change default port 8000 by using first input argument
   if (argc == 2){
-    printf("port %d before \n", port);
     port = atoi(argv[1]);
-    printf("port %d after\n", port);
   }
 
   dyad_Stream *s;
