@@ -11,10 +11,11 @@
 #include "lualib.h"
 #include "lauxlib.h"
 
-/* A very lightweight webdis replacement written in lua using dyad, lsocket and resp */
+/* A very lightweight webframework for lua using luadyad */
 
 static int count = 0;
 const char* luareturn;
+// default port
 int port = 8000;
 
 
@@ -24,7 +25,7 @@ const char* callLua(char string[128]){
   lua_State *L = luaL_newstate();
   luaL_openlibs(L);
 
-  // Tell Lua to load & run the file sample_script.lua
+  // Tell Lua to load main.lua
   luaL_dofile(L, "main.lua");
 
   // Push function to the Lua stack
@@ -41,7 +42,7 @@ const char* callLua(char string[128]){
     printf("error when calling lua function");
   }
 
-  // main.lua should alway return a string!
+  // main.lua should always return a string!
   if (lua_isstring(L, -1)) {
     int top = lua_gettop(L);
     luareturn = lua_tostring(L, -1);
